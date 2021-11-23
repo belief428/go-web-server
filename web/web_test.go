@@ -1,6 +1,8 @@
-package go_web_server
+package web
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestNewWeb(t *testing.T) {
 	NewWeb()(nil).Start(nil)

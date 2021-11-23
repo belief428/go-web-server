@@ -1,4 +1,4 @@
-package go_web_server
+package web
 
 import (
 	"fmt"
@@ -52,7 +52,7 @@ func (this *Web) stop() {
 	}()
 }
 
-func (this *Web) Start(handler http.HandlerFunc) {
+func (this *Web) Start(handler http.Handler) {
 	this.httpServer = &http.Server{
 		Addr:           this.Addr,
 		Handler:        handler,

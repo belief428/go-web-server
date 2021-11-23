@@ -1,0 +1,67 @@
+# token有效时间（秒）
+token_effect_time: 2592000
+# multiple_login 多地登录
+multiple_login: true
+
+server:
+  port: 8010
+  read_timeout: 5
+  write_timeout: 5
+  idle_timeout: 5
+
+# RATE 限流器
+rate:
+  # 每秒注入容器中数量
+  limit: 50
+  # 每个IP每秒请求最大次数
+  capacity: 100
+
+# ENGINE 配置
+engine:
+  # 开启会输出sql日志
+  debug: true
+  # db_mode - mysql | sqlite
+  db_mode: sqlite
+  max_lifetime: 3600
+  max_open_conns: 2000
+  max_idle_conns: 1000
+  table_prefix:
+  # 是否采用数据表复数
+  complex: false
+  # MYSQL 配置
+  mysql:
+    host: 127.0.0.1
+    port: 3306
+    user:
+    password:
+    db_name:
+    parameters: charset=utf8mb4,utf8&parseTime=True&loc=Local
+  # SQLITE 配置
+  sqlite:
+    path: data
+    name: app.db
+
+cache:
+  # memory | redis
+  type: redis
+  redis:
+    addr: "127.0.0.1:6379"
+    password:
+    db: 0
+    max_active: 0
+    max_idle: 1000
+    idle_timeout: 240
+
+# UPLOAD 上传文件配置
+upload:
+  path: upload/
+  ext: png,jpg,csv,xls,xlsx,pcm,wav,amr,mp3,mp4,json
+  # size  4<<20，不支持位运算，文件最大限制
+  size: 4194304
+  rename: true
+
+#LOG 日志管理
+log:
+  file: log/logs.log
+  least_day: 7
+  level: info # debug | info | warn | error

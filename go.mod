@@ -5,6 +5,8 @@ go 1.16
 require (
 	github.com/antonfisher/nested-logrus-formatter v1.3.1
 	github.com/belief428/gorm-engine v1.0.1
+	github.com/common-nighthawk/go-figure v0.0.0-20210622060536-734e95fb86be
+	github.com/gin-gonic/gin v1.7.6 // indirect
 	github.com/go-redis/redis v6.15.9+incompatible
 	github.com/jonboulle/clockwork v0.2.2 // indirect
 	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible
