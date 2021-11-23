@@ -1,7 +1,7 @@
 package router
 
 import (
-	"github.com/ipeace/go-web-server/utils"
+	"github.com/belief428/go-web-server/utils"
 	"net/http"
 )
 

@@ -3,7 +3,7 @@ package logger
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/ipeace/go-web-server/utils"
+	"github.com/belief428/go-web-server/utils"
 	"os"
 	"path/filepath"
 	"runtime"

@@ -2,9 +2,9 @@ package cmd
 
 import (
 	"flag"
+	"github.com/belief428/go-web-server/router"
+	"github.com/belief428/go-web-server/web"
 	figure "github.com/common-nighthawk/go-figure"
-	"github.com/ipeace/go-web-server/router"
-	"github.com/ipeace/go-web-server/web"
 	"runtime"
 )
 

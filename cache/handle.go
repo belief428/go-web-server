@@ -1,6 +1,6 @@
 package cache
 
-import "github.com/ipeace/go-web-server/cache/logic"
+import "github.com/belief428/go-web-server/cache/logic"
 
 func Set(key string, value interface{}, expiration int) error {
 	return client.Set(key, value, expiration)

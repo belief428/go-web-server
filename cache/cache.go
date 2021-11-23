@@ -1,7 +1,7 @@
 package cache
 
 import (
-	"github.com/ipeace/go-web-server/cache/logic"
+	"github.com/belief428/go-web-server/cache/logic"
 )
 
 type Config struct {

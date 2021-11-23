@@ -1,7 +1,7 @@
 package orm
 
 import (
-	"github.com/ipeace/go-web-server/orm/logic"
+	"github.com/belief428/go-web-server/orm/logic"
 	"log"
 	"os"
 	"time"
